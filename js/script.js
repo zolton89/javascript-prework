@@ -4,15 +4,15 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 
 let computerMove = 'nieznany ruch';
 
-if(randomNumber == 1){
+if (randomNumber == 1) {
   computerMove = 'kamień';
 }
 
-if(randomNumber == 2){
+if (randomNumber == 2) {
     computerMove = 'papier';
 }
 
-if(randomNumber == 3){
+if (randomNumber == 3) {
     computerMove = 'nożyce';
 }
 
@@ -24,57 +24,57 @@ console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = 'nieznany ruch';
 
-if(playerInput == '1'){
+if (playerInput == '1') {
   playerMove = 'kamień';
 }
 
-if(playerInput == '2'){
+if (playerInput == '2') {
     playerMove = 'papier';
 }
 
-if(playerInput == '3'){
+if (playerInput == '3') {
     playerMove = 'nożyce';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
 
-if(computerMove == '1' && playerMove == '1' ){
+if (computerMove == 'kamień' && playerMove == 'kamień' ) {
     printMessage('Remis');
 }
 
-if(computerMove == '1' && playerMove == '2' ){
+if (computerMove == 'kamień' && playerMove == 'papier' ) {
     printMessage('Ty wygrywasz!');
 }
 
-if(computerMove == '1' && playerMove == '3' ){
+if (computerMove == 'kamień' && playerMove == 'nożyce' ) {
     printMessage('Ty przegrywasz!');
 }
 
-if(computerMove == '2' && playerMove == '1' ){
+if (computerMove == 'papier' && playerMove == 'kamień' ) {
     printMessage('Przegrywasz!');
 }
 
-if(computerMove == '2' && playerMove == '2' ){
+if (computerMove == 'papier' && playerMove == 'papier' ) {
     printMessage('Remis!');
 }
 
-if(computerMove == '2' && playerMove == '3' ){
+if (computerMove == 'papier' && playerMove == 'nożyce' ) {
     printMessage('Ty wygrywasz!');
 }
 
-if(computerMove == '3' && playerMove == '1' ){
+if (computerMove == 'nożyce' && playerMove == 'kamień' ) {
     printMessage('Ty wygrywasz!');
 }
 
-if(computerMove == '3' && playerMove == '2' ){
+if (computerMove == 'nożyce' && playerMove == 'papier' ) {
     printMessage('Ty przegrywasz!');
 }
 
-if(computerMove == '3' && playerMove == '3' ){
+if (computerMove == 'nożyce' && playerMove == 'nożyce' ) {
     printMessage('Remis!');
 }
 
-if(computerMove == '1,2,3' && playerMove == 'nieznany ruch' ){
-    printMessage('Wybierz poprawny numer1');
+if (computerMove == 'kamień,papier,nożyce' && playerMove == 'nieznany ruch' ){
+    printMessage('Wybierz poprawny numer');
 }
-1
+
