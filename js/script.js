@@ -1,3 +1,4 @@
+{
 function playGame(playerInput) {
   clearMessages();
 
@@ -13,20 +14,16 @@ function playGame(playerInput) {
     return 'nieznany ruch';
   }
 
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
 
-  let argComputerMove = getMoveName(randomNumber);
+  const argComputerMove = getMoveName(randomNumber);
   printMessage('Mój ruch to: ' + argComputerMove);
 
-  /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-  console.log('Gracz wpisał: ' + playerInput);*/
-    
-  let argPlayerMove = getMoveName(playerInput);
+  const argPlayerMove = getMoveName(playerInput);
   printMessage('Twój ruch to: ' + argPlayerMove);
     
-
-  function displayResult(argComputerMove, argPlayerMove) {
+  function displayResult() {
 
     if (argComputerMove == argPlayerMove ) {
     printMessage('Remis');
@@ -68,4 +65,4 @@ function playGame(playerInput) {
     playGame(3);
   });
 
- 
+}
